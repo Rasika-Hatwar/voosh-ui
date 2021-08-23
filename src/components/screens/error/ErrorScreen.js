@@ -1,22 +1,22 @@
 import { useState } from "react";
-import "./Welcome.scss";
+import "./ErrorScreen.scss";
 import WelcomeIcon from "../../../assets/Group 3.svg";
-import ErrorScreen from "../error/ErrorScreen";
+import Home from "../home/Home";
 
-export default function Welcome() {
-  const [showError, setshowError] = useState(false);
+export default function ErrorScreen() {
+  const [showHome, setShowHome] = useState(false);
   const navigateToHome = () => {
-    setshowError(true);
+    setShowHome(true);
   };
   return (
     <>
-      {!showError && (
+      {!showHome && (
         <div className="welcome-container">
           <div className="log-out-container">
             <button className="log-out"> Log Out</button>
           </div>
-          <div className="main-title">Well done Naveen,</div>
-          <div className="sub-title"> welcome to Voosh</div>
+          <div className="main-title">Oops Naveen,</div>
+          <div className="sub-title">didn’t find your payment mails</div>
           <div className="patient-text">
             Please be patient. Your account statistics are getting ready in an
             hour{" "}
@@ -28,7 +28,7 @@ export default function Welcome() {
           </div>
         </div>
       )}
-      {showError && <ErrorScreen />}
+      {showHome && <Home />}
     </>
   );
 }

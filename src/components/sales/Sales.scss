@@ -1,0 +1,56 @@
+.sales {
+  display: flex;
+  flex-direction: column;
+
+  .top-sales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .card {
+      margin: 5px;
+      padding: 10px 10px 0 10px;
+      height: 130px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      background: white;
+      border-radius: 20px;
+
+      .total-sales {
+        font-size: 14px;
+        color: #919398;
+        margin-bottom: 5px;
+      }
+      .know-more {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .bottom-sales {
+    margin-top: 5px;
+    // display: flex;
+    width: 100%;
+    .card {
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      background: white;
+      border-radius: 20px;
+      height: 90px;
+      padding: 10px 10px 0 10px;
+      .total-sales {
+        font-size: 14px;
+        color: #919398;
+      }
+      .know-more {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}

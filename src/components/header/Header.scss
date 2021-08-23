@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  //   border: 1px red solid;
+  width: 100%;
+  .header-title {
+    color: white;
+    font-size: 24px;
+  }
+  button {
+    border-radius: 50px;
+    width: 100px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    .log-out-text {
+      color: #eb5757;
+    }
+  }
+}

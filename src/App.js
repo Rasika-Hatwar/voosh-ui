@@ -1,12 +1,13 @@
-import "./App.css";
+import "./App.scss";
 import Login from "./components/screens/login/Login";
-import Welcome from "./components/screens/welcome/Welcome";
 
 function App() {
+  // let step = 1;
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Welcome />
+      <Login />
+      {/* {<Welcome />} */}
+      {/* <Home /> */}
     </div>
   );
 }
